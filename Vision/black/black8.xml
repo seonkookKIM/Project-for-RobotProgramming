@@ -1,0 +1,26 @@
+<annotation>
+	<folder>black</folder>
+	<filename>black8.jpg</filename>
+	<path>C:\Users\Administrator\Desktop\windows_v1.8.1\windows_v1.8.1\data\black\black8.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>blackbox</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>282</xmin>
+			<ymin>186</ymin>
+			<xmax>745</xmax>
+			<ymax>658</ymax>
+		</bndbox>
+	</object>
+</annotation>
