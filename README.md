@@ -10,7 +10,8 @@
 [TURTLEBOT3_SBC]
 ssh pi@***.***.***.***
 cd turtlebot_ws/
-ros2 run v412
+ros2 run v4l2_camera v4l2_camera_node --ros-args -r __ns:=/camera
+
 
 새로운 터미널을 연후
 
