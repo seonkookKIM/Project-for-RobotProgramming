@@ -1,6 +1,7 @@
 🛠️ 실행 방법 (Simulation & Navigation)
 본 프로젝트는 Gazebo 시뮬레이터에서 TurtleBot3를 활용하여 물류 박스를 인식하고 지정된 좌표를 자율 주행으로 순회
 아래 명령어들을 순서대로 실행
+여기서 empty_world는 빈 파일이 아닌 수정한 맵 파일
 
 1️⃣ Gazebo 시뮬레이터 실행
 ros2 launch turtlebot3_gazebo empty_world.launch.py use_sim_time:=true
