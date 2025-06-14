@@ -14,6 +14,5 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true
 4️⃣ 경로 계획 노드 실행
 ros2 run path_planner path_node
 
-📦 models.zip 정보
-models.zip에는 Gazebo 시뮬레이터에 배치할 색상 박스 모델이 포함되어 있습니다.
-압축 해제 후 사용
+📦 models
+models에는 Gazebo 시뮬레이터에 배치할 색상 박스 모델이 포함되어 있습니다.
