@@ -10,7 +10,8 @@
 [TURTLEBOT3_SBC]
 ssh pi@***.***.***.***
 cd turtlebot_ws/
-ros2 run v412
+ros2 run v4l2_camera v4l2_camera_node --ros-args -r __ns:=/camera
+
 
 새로운 터미널을 연후
 
@@ -18,13 +19,15 @@ export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_bringup robot.launch.py
 
 [REMOTE_PC]
-ros2 launch turtlebot3_navigation2 navigation2
-//출발지에서 파라미터 조절
-
-[TURTLEBOT3_SBC]
 cd turtlebot3_ws
-colcon build
+colcon build --symlink-install
 source install/setup.bash
+ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
+
+//출발지에서 2d pose estimate
+
+[REMOTE_PC]
+
 ros2 launch turtlebot3_group6 lift.launch.py
 // 물체인식 후 경로탐색 시작
 
